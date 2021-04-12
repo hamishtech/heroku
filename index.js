@@ -11,6 +11,7 @@ app.listen(PORT, () => {
 app.use(express.json());
 app.use(morgan('tiny'));
 app.use(cors());
+app.use(express.static('build'));
 
 let persons = [
   { name: 'Hamish Boodhoo', number: '040-123456', id: 0 },
