@@ -19,7 +19,7 @@ let persons = [
   { name: 'John Rambo', number: '39-23-6423122', id: 3 },
 ];
 
-app.get('/api/persons', (req, res) => {
+app.get('/', (req, res) => {
   res.send(persons);
   console.log(persons);
 });
